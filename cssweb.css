@@ -1,0 +1,153 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fb;
+    line-height: 1.6;
+}
+
+/* HEADER */
+header {
+    background-color: #0b63ce;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* NAVBAR */
+nav {
+    background-color: #083b7a;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+
+nav ul li a:hover {
+    color: white;
+    text-shadow: 0 0 5px white;
+    text-decoration: underline;
+}
+
+nav ul li a:active {
+    color: white;
+}
+
+/* SECTIONS */
+section {
+    padding: 20px;
+    margin: 20px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+/* IMAGE */
+img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    display: block;
+    margin: 15px auto;
+}
+
+/* PROJECTS */
+#projects div {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: 10px;
+}
+
+/* PROJECT LINK */
+.project-link {
+    margin-top: 15px;
+    font-style: italic;
+    color: gray;
+}
+
+/* FORM */
+form {
+    margin-top: 15px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #0b63ce;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #094fa5;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #083b7a;
+    color: white;
+}
+
+/* ========================= */
+/* RESPONSIVE */
+/* ========================= */
+
+@media (max-width: 992px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 768px) {
+    img {
+        width: 150px;
+        height: 150px;
+    }
+
+    section {
+        margin: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    header h1 {
+        font-size: 20px;
+    }
+
+    nav ul li {
+        margin: 5px;
+    }
+}
