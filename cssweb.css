@@ -1,0 +1,332 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fb;
+    line-height: 1.7;
+    color: #222;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* Header */
+header {
+    background: linear-gradient(to right, #0b63ce, #2b7cff);
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
+}
+
+header h1 {
+    font-size: 2.2rem;
+    margin-bottom: 8px;
+}
+
+header p {
+    font-size: 1.1rem;
+}
+
+/* Navbar */
+nav {
+    background-color: #083b7a;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 10px 14px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: white;
+    text-shadow: 0 0 5px white;
+    text-decoration: underline;
+}
+
+/* Sections */
+section {
+    background-color: white;
+    margin: 25px auto;
+    padding: 30px 25px;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+    text-align: center;
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 25px;
+    color: #222;
+}
+
+/* Paragraphs */
+section p {
+    max-width: 800px;
+    margin: 12px auto;
+}
+
+/* About image */
+.profile-img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    margin: 20px auto;
+    border: 4px solid #e8eefc;
+}
+
+/* Cards */
+.card,
+.project-card {
+    background-color: #fafafa;
+    border: 1px solid #e5e5e5;
+    border-radius: 12px;
+    padding: 25px 20px;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+.education-card {
+    font-size: 1.2rem;
+}
+
+/* Projects */
+.project-card h3 {
+    font-size: 1.9rem;
+    margin-bottom: 18px;
+    line-height: 1.4;
+}
+
+.project-img {
+    width: 220px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    background-color: #083b7a;
+    color: white;
+    text-decoration: none;
+    padding: 11px 24px;
+    border-radius: 8px;
+    margin-top: 12px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #0b63ce;
+}
+
+/* Contact */
+.contact-info {
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    margin-bottom: 10px;
+}
+
+.contact-info a {
+    color: #083b7a;
+}
+
+form {
+    max-width: 800px;
+    margin: 20px auto 0;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 18px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+button {
+    background-color: #083b7a;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #0b63ce;
+}
+
+/* Footer */
+footer {
+    background-color: #083b7a;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    margin-top: 20px;
+}
+
+/* Laptop */
+@media (max-width: 992px) {
+    .container {
+        width: 92%;
+    }
+
+    section {
+        padding: 25px 20px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .project-card h3 {
+        font-size: 1.6rem;
+    }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+    header {
+        padding: 25px 10px;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    nav ul {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    nav ul li {
+        margin: 8px 10px;
+    }
+
+    section {
+        padding: 22px 16px;
+    }
+
+    section h2 {
+        font-size: 1.7rem;
+    }
+
+    .profile-img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .project-card h3 {
+        font-size: 1.4rem;
+    }
+
+    .project-img {
+        width: 180px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    header p {
+        font-size: 0.95rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        padding: 10px 0;
+    }
+
+    nav ul li {
+        margin: 6px 0;
+    }
+
+    section {
+        padding: 18px 14px;
+        margin: 18px auto;
+    }
+
+    section h2 {
+        font-size: 1.5rem;
+    }
+
+    section p {
+        font-size: 0.95rem;
+    }
+
+    .profile-img {
+        width: 130px;
+        height: 130px;
+    }
+
+    .project-card h3 {
+        font-size: 1.2rem;
+    }
+
+    .project-img {
+        width: 150px;
+    }
+
+    .btn {
+        width: 100%;
+        max-width: 220px;
+        padding: 10px 18px;
+    }
+
+    form {
+        text-align: left;
+    }
+
+    input,
+    textarea {
+        font-size: 0.95rem;
+    }
+}
